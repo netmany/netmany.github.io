@@ -1,0 +1,29 @@
+hr {
+    margin-top: 3em; 
+    margin-bottom: 3em
+}
+
+.reference {
+    font-size: 0.9rem;
+}
+
+a {
+    color:green;
+    text-decoration: none
+}
+
+a:hover {
+    color: red
+}
+
+.preword {
+    margin-left: 15em;
+    font-size: 0.8rem;
+}
+
+.codz {
+    width: 100%;
+    color: #DDDDDD;
+    background-color: #333333; 
+    border-radius: 1em; 
+}
