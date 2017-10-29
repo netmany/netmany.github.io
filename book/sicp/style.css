@@ -1,6 +1,6 @@
 body {
     margin-top: 0em;
-    font-size: 20px;
+    /*font-size: 20px;*/
     /*font-family: sans-serif;*/
     background-color: #fdfcf7
 }
@@ -38,7 +38,7 @@ a:hover {
 }
 
 .preword {
-    margin-left: 15em;
+    margin-left: 30%;
     font-size: 0.8rem;
 }
 
