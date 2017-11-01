@@ -25,8 +25,17 @@
 
 <body>
     <div class="main">
+    <a href="#top"><div style="position: fixed;
+         border-radius: 1em;
+         bottom: 90px;
+         right: 50px;
+         padding-left: 0.5em;
+         padding-right: 0.5em;
+         background: #222222;">
+        <pre style="margin: 0.5em;"><code>goto top</code></pre>
+    </div></a>
     <h1>
-        Chapter 1<br>
+        <a name="top">Chapter 1</a><br>
         Building Abstractions with Procedures
     </h1>
     <br>
@@ -107,14 +116,15 @@
         Expressions representing numbers may be combined with an expression representing a primitive
         procedure (such as + or *) to form a compound expression that represents the application of the procedureto those numbers. For example:
     </p>
-    <table class="codz"><tr><td>
-    <pre>
-        (+ 137 349)
-        <i>486</i>
-        (- 1000 334)
-        <i>666</i>
-    </pre> 
-    </td></tr></table>
+    <pre class="codz">
+        <code>
+            (+ 137 349)
+            <i>486</i>
+            (- 1000 334)
+            <i>666</i>
+            procedure (such as + or *) to form a compound expression that represents the application of the procedureto those numbers. For example:
+        </code>
+    </pre>
     
     <p>
         Expressions such as these, formed by delimiting a list of expressions within parentheses in order to denote
