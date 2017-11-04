@@ -4,270 +4,285 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>paper in single column</title>
     <style type="text/css">
-        body {
-            margin-top: 3em;
-            margin-left: 3em;
-            margin-right: 3em;
-            margin-bottom: 3em;
-        }
-        p {
-            text-indent: 2em;
-        }
-        h4 {
-            font-weight: normal;
-            font-style: italic;
-        }
-        table.sci-tbl {
-            border-collapse:collapse;
-            border-top: 1px solid #000000;
-            border-bottom:1px solid #000000;
-            width: 70%;
-        }
-        table.sci-tbl tr:first-child {
-            /*border-top:1px solid #000000;*/
-            border-bottom:1px solid #000000;
-        }
-        table.sci-tbl td {
-            text-align: center;
-            vertical-align: middle;
-        }
-        table.ref td {
-            vertical-align: top;
-        }
-        img {
-            width: 100%;
-            max-width: 40em;
-        }
-        div.col {
-        	columns: 2; 
-        	column-gap: 2em; 
-        	padding-top: 3em;
-        }
-        @media screen and (max-width: 640px) {
-        	div.col {
-        		columns: 1; 
-        		column-gap: 0em; 
-        	}
-        }
-    </style>
+    body {
+        margin: 0em;
+        margin-top: 0em;
+        margin-left: 0em;
+        margin-right: 0em;
+        margin-bottom: 0em;
+        font-family: sans-serif;
+        background-color: #555555;
+    }
+    div.main {
+        background-color: #f5f5f1;
+        padding-top: 3em;
+        padding-left: 3em; 
+        padding-right: 3em; 
+        padding-bottom: 3em;
+        max-width: 45em; 
+        margin: 0 auto;
+        min-height: 100%;
+    }
+    p {
+        text-indent: 2em;
+    }
+    h4 {
+        font-weight: normal;
+        font-style: italic;
+    }
+    table.sci-tbl {
+        border-collapse:collapse;
+        border-top: 1px solid #000000;
+        border-bottom:1px solid #000000;
+        width: 70%;
+    }
+    table.sci-tbl tr:first-child {
+        /*border-top:1px solid #000000;*/
+        border-bottom:1px solid #000000;
+    }
+    table.sci-tbl td {
+        text-align: center;
+        vertical-align: middle;
+    }
+    table.ref td {
+        vertical-align: top;
+    }
+    img {
+        width: 100%;
+        max-width: 40em;
+    }
+    div.col {
+       columns: 2; 
+       column-gap: 2em; 
+       padding-top: 3em;
+   }
+   @media screen and (max-width: 640px) {
+       div.col {
+          columns: 1; 
+          column-gap: 0em; 
+      }
+  }
+</style>
 </head>
 <body>
-    <div align="center">
-        <h2>The Future of Computer Science</h2>
-        <br>
-        <h3 style="font-weight: normal;">
-            John E. Hopcroft, Sucheta Soundarajan, and Liaoruo Wang
-        </h3>
-        <h4 style="font-weight: normal;">
-            (Cornell University, Ithaca NY 14853, USA)
-        </h4>
-    </div>
-    <p style="text-indent: 0em">
-        <b>Abstract</b> Computer science is undergoing a fundamental change and is reshaping our understanding
-        of the world. An important aspect of this change is the theory and applications
-        dealing with the gathering and analyzing of large real-world data sets. In this paper, we
-        introduce four research projects in which processing and interpreting large data sets is a central
-        focus. Innovative ways of analyzing such data sets allow us to extract useful information
-        that we would never have obtained from small or synthetic data sets, thus providing us with
-        new insights into the real world.
-    </p>
-    <p style="text-indent: 0em">
-        <b>Key words:</b> modern computer science; social networks; large data sets; high-dimensional
-        data
-    </p>
-    <p style="text-indent: 0em">
-        <b>Hopcroft JE, Soundarajan S, Wang L. The future of computer science.</b> <i>Int J Software
-        Informatics, Vol.5, No.4 (2011): 549–565.</i> http://www.ijsi.org/1673-7288/5/i110.htm
-    </p>
-    <div class="col">
-    <h3>1 Introduction</h3>
-    <p>
-        Modern computer science is undergoing a fundamental change. In the early years
-        of the field, computer scientists were primarily concerned with the size, efficiency
-        and reliability of computers. They attempted to increase the computational speed
-        as well as reduce the physical size of computers, to make them more practical and
-        useful. The research mainly dealt with hardware, programming languages, compilers,
-        operating systems and data bases. Meanwhile, theoretical computer science developed
-        an underlying mathematical foundation to support this research which in turn, led
-        to the creation of automata theory, formal languages, computability and algorithm
-        analysis. Through the efforts of these researchers, computers have shrunk from the
-        size of a room to that of a dime, nearly every modern household has access to the
-        internet and communications across the globe are virtually instantaneous.
-    </p>
-    <p>
-        Computers can be found everywhere, from satellites hundreds of miles above us
-        to pacemakers inside beating human hearts. The prevalence of computers, together
-        with communication devices and data storage devices, has made vast quantities of
-        data accessible. This data incorporates important information that reveals a closer
-        approximation of the real world and is fundamentally different from what can be
-        extracted from individual entities. Rather than analyzing and interpreting individual
-        messages, we are more interested in understanding the complete set of information
-        from a collective perspective
-    </p>
-    <h4>1.1 Tracking communities in social networks</h4>
-    <p>
-        However, while Google’s search engine was a major advance in search technology,
-        there will be more significant advances in the future. Consider a user who asks the
-        question, “When was Einstein born?” Instead of returning hundreds of webpages to
-        such a search, one might expect the answer “Einstein was born at Ulm, in Wurttemberg
-        Germany, on March 14, 1879”, along with pointers to the source from which the
-        answer was extracted. Other similar searches might be:
-        <ul type="square">
-            <li>Construct an annotated bibliography on graph theory</li>
-            <li>Which are the key papers in theoretical computer science?</li>
-            <li>Which car should I buy?</li>
-            <li>Where should I go to college?</li>
-            <li>How did the field of computer science develop?</li>
-        </ul>
-    </p>
-    <p>
-        Search engine companies have saved billions of search records along with a whole
-        archive of information. When we search for the answer to the question “Which car
-        should I buy?”, they can examine pages that other individuals who did similar searches
-        have looked at, extract a list of factors that might be important (e.g. fuel economy,
-        price, crash safety), and prompt the user to rank them. Given these priorities, the
-        search engine will provide a list of automobiles ranked according to the preferences,
-        as well as key specifications and hyperlinks to related articles about the recommended
-        models.
-    </p>
-    <div align="center">
-        <img src="f2.png" alt="A sample friendship network"> <br>
-        Figure 2. A sample friendship network.
-    </div>
-    <p>
-        This work opens up several new questions about the structure of large-scale social
-        networks, and it demonstrates the successful use of the (α, β)-community algorithm
-        on real-world networks for identifying their underlying social structure. Further, this
-        work inspires an effective way of finding overlapping communities and discovering the
-        underlying core structure from random perturbations. In social graphs, one would
-        not expect a community to have an exact boundary; thus, the vertices inside an
-        (α, β)-community but outside the corresponding core are actually located in the rough
-        boundary regions. Other open questions include how the core structure will evolve,
-        whether the cores correspond to the stable backbones of the network, and whether the
-        vertices that belong to multiple communities at the same time constitute the unstable
-        boundary regions of the network.<sup>[5,15]</sup>.
-    </p>
-    <h4>1.2 Tracking flow of ideas in scientific literature</h4>
-    <p>
-        Remarkable development in data storage has facilitated the creation of gigantic
-        digital document collections available for searching and downloading. When navigating
-        and seeking information in a digital document collection, the ability to identify
-        topics with their time of appearance and predict their evolution over time, would
-        be of significant help. Before starting research in a specific area, a researcher might
-        quickly survey the area, determine how topics in the area have evolved, locate important
-        ideas, and the papers that introduced those ideas. Knowing a specific topic,
-        a researcher might find out whether it has been discussed in previous papers, or is a
-        fairly new concept.
-    </p>
-    <h3>2 Theoretical Foundation</h3>
-    <p>
-        As demonstrated in the previous section, the focus of modern computer science
-research is shifting to problems concerning large data sets. Thus, a theoretical foundation
-and science base is required for rigorously conducting studies in many related
-areas. The theory of large data sets is quite different from that of smaller data sets;
-when dealing with smaller data sets, discrete mathematics is widely used, but for
-large data sets, asymptotic analysis and probabilistic methods must be applied. Additionally,
-this change in the theoretical foundation requires a completely different
-kind of mathematical intuition.
-    </p>
-    <p>
-        We will describe three examples of the science base in this section. Section 3.1
-briefly introduces some features of large graphs and two types of random graph models.
-Section 3.2 explores the properties and applications of high-dimensional data.
-Finally, Section 3.3 discusses some scientific and practical problems involving sparse
-vectors.
-    </p>
-    <h4>2.1 Large-Scale graphs</h4>
-    <p>
-        Large graphs have become an increasingly important tool for representing realworld
-data in modern computer science research. Many empirical experiments have
-been performed on large-scale graphs to reveal interesting findings[3,5,15,21−27]. A
-computer network may have consisted of only a few hundred nodes in previous years,
-but now we must be able to deal with large-scale networks containing millions or
-even billions of nodes. Many important features of such large graphs remain constant
-when small changes are made to the network. 
-    </p>
-    <div align="center">
-        <img src="f3.png" alt="Topic evolution map of the ACM corpus"> <br>
-        Figure 3. Topic evolution map of the ACM corpus
-    </div>
-    <p>
-        Another interesting feature of real-world networks is the existence of the “giant
-component”. The following table describes the number of components of each size in
-a protein database containing 2,730 proteins and 3,602 interactions between proteins.
-    </p>
-    <div align="center">
-    <table class="sci-tbl">
-        <tr>
-            <td style="width: 20%">Component Size</td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td># Components</td>
-            <td>34</td>
-            <td>47</td>
-            <td>68</td>
-            <td>9</td>
-        </tr>
-        <tr>
-            <td># Color</td>
-            <td>769</td>
-            <td>679</td>
-            <td>890</td>
-            <td>57</td>
-        </tr>
-        <tr>
-            <td>#Weight</td>
-            <td>678</td>
-            <td>3</td>
-            <td>79</td>
-            <td>75</td>
-        </tr>
-    </table><br>
-    Table 2.1 Component Size Scaling   
-    </div>
-    <p>
-        Since random graph models mimic some vital features of real-world networks,
-it is often helpful to study the processes that generate these features in random
-graph models. An understanding of these processes can provide valuable insights for
-analyzing real-world data sets.
-    </p>
-    <h3>3 Conclusion</h3>
-    <p>
-        Future computer science research is believed to employ, analyze, and interpret
-large data sets. In this paper, we have discussed several examples of current projects
-that represent modern research directions in computer science, ranging from identifying
-communities in large-scale social networks to tracing bird migration routes in
-North America. As computing pervades every facet of our lives and data collection
-becomes increasingly ubiquitous, feasible algorithms for solving these problems are
-becoming more and more necessary to analyze and understand the vast quantities of
-available information. In order to rigorously develop these algorithms, a mathematical
-foundation must be established for large data sets, including the theory of large
-graphs, high-dimensional data, sparse vectors and so on. These innovative studies
-discover striking results that reveal a fundamental change in computer science that
-will reshape our knowledge of the world.
-    </p>
-    <h3>References</h3>
-    <table class="ref" style="font-size: 0.8em">
-        <tr>
-            <td>[1]</td>
-            <td>Shaparenko B, Caruana R, Gehrke J, Joachims T. Identifying temporal patterns and key players
-                in document collections. Proc. of IEEE ICDM Workshop on Temporal Data Mining: Algorithms,
-            Theory and Applications (TDM-05). 2005. 165–174.</td>
-        </tr>
-        <tr>
-            <td>[2]</td>
-            <td>Gaertler M. Clustering. Network Analysis: Methodological Foundations, 2005, 3418: 178–215.</td>
-        </tr>
-        <tr>
-            <td>[3]</td>
-            <td>Newman MEJ, Girvan M. Finding and evaluating community structure in networks. Phys. Rev.
-            E, 2004, 69(026113).</td>
-        </tr>
-    </table>
+    <div class="main">
+        <div align="center">
+            <h2>The Future of Computer Science</h2>
+            <br>
+            <h3 style="font-weight: normal;">
+                John E. Hopcroft, Sucheta Soundarajan, and Liaoruo Wang
+            </h3>
+            <h4 style="font-weight: normal;">
+                (Cornell University, Ithaca NY 14853, USA)
+            </h4>
+        </div>
+        <p style="text-indent: 0em">
+            <b>Abstract</b> Computer science is undergoing a fundamental change and is reshaping our understanding
+            of the world. An important aspect of this change is the theory and applications
+            dealing with the gathering and analyzing of large real-world data sets. In this paper, we
+            introduce four research projects in which processing and interpreting large data sets is a central
+            focus. Innovative ways of analyzing such data sets allow us to extract useful information
+            that we would never have obtained from small or synthetic data sets, thus providing us with
+            new insights into the real world.
+        </p>
+        <p style="text-indent: 0em">
+            <b>Key words:</b> modern computer science; social networks; large data sets; high-dimensional
+            data
+        </p>
+        <p style="text-indent: 0em">
+            <b>Hopcroft JE, Soundarajan S, Wang L. The future of computer science.</b> <i>Int J Software
+            Informatics, Vol.5, No.4 (2011): 549–565.</i> http://www.ijsi.org/1673-7288/5/i110.htm
+        </p>
+        <div class="col">
+            <h3>1 Introduction</h3>
+            <p>
+                Modern computer science is undergoing a fundamental change. In the early years
+                of the field, computer scientists were primarily concerned with the size, efficiency
+                and reliability of computers. They attempted to increase the computational speed
+                as well as reduce the physical size of computers, to make them more practical and
+                useful. The research mainly dealt with hardware, programming languages, compilers,
+                operating systems and data bases. Meanwhile, theoretical computer science developed
+                an underlying mathematical foundation to support this research which in turn, led
+                to the creation of automata theory, formal languages, computability and algorithm
+                analysis. Through the efforts of these researchers, computers have shrunk from the
+                size of a room to that of a dime, nearly every modern household has access to the
+                internet and communications across the globe are virtually instantaneous.
+            </p>
+            <p>
+                Computers can be found everywhere, from satellites hundreds of miles above us
+                to pacemakers inside beating human hearts. The prevalence of computers, together
+                with communication devices and data storage devices, has made vast quantities of
+                data accessible. This data incorporates important information that reveals a closer
+                approximation of the real world and is fundamentally different from what can be
+                extracted from individual entities. Rather than analyzing and interpreting individual
+                messages, we are more interested in understanding the complete set of information
+                from a collective perspective
+            </p>
+            <h4>1.1 Tracking communities in social networks</h4>
+            <p>
+                However, while Google’s search engine was a major advance in search technology,
+                there will be more significant advances in the future. Consider a user who asks the
+                question, “When was Einstein born?” Instead of returning hundreds of webpages to
+                such a search, one might expect the answer “Einstein was born at Ulm, in Wurttemberg
+                Germany, on March 14, 1879”, along with pointers to the source from which the
+                answer was extracted. Other similar searches might be:
+                <ul type="square">
+                    <li>Construct an annotated bibliography on graph theory</li>
+                    <li>Which are the key papers in theoretical computer science?</li>
+                    <li>Which car should I buy?</li>
+                    <li>Where should I go to college?</li>
+                    <li>How did the field of computer science develop?</li>
+                </ul>
+            </p>
+            <p>
+                Search engine companies have saved billions of search records along with a whole
+                archive of information. When we search for the answer to the question “Which car
+                should I buy?”, they can examine pages that other individuals who did similar searches
+                have looked at, extract a list of factors that might be important (e.g. fuel economy,
+                price, crash safety), and prompt the user to rank them. Given these priorities, the
+                search engine will provide a list of automobiles ranked according to the preferences,
+                as well as key specifications and hyperlinks to related articles about the recommended
+                models.
+            </p>
+            <div align="center">
+                <img src="f2.png" alt="A sample friendship network"> <br>
+                Figure 2. A sample friendship network.
+            </div>
+            <p>
+                This work opens up several new questions about the structure of large-scale social
+                networks, and it demonstrates the successful use of the (α, β)-community algorithm
+                on real-world networks for identifying their underlying social structure. Further, this
+                work inspires an effective way of finding overlapping communities and discovering the
+                underlying core structure from random perturbations. In social graphs, one would
+                not expect a community to have an exact boundary; thus, the vertices inside an
+                (α, β)-community but outside the corresponding core are actually located in the rough
+                boundary regions. Other open questions include how the core structure will evolve,
+                whether the cores correspond to the stable backbones of the network, and whether the
+                vertices that belong to multiple communities at the same time constitute the unstable
+                boundary regions of the network.<sup>[5,15]</sup>.
+            </p>
+            <h4>1.2 Tracking flow of ideas in scientific literature</h4>
+            <p>
+                Remarkable development in data storage has facilitated the creation of gigantic
+                digital document collections available for searching and downloading. When navigating
+                and seeking information in a digital document collection, the ability to identify
+                topics with their time of appearance and predict their evolution over time, would
+                be of significant help. Before starting research in a specific area, a researcher might
+                quickly survey the area, determine how topics in the area have evolved, locate important
+                ideas, and the papers that introduced those ideas. Knowing a specific topic,
+                a researcher might find out whether it has been discussed in previous papers, or is a
+                fairly new concept.
+            </p>
+            <h3>2 Theoretical Foundation</h3>
+            <p>
+                As demonstrated in the previous section, the focus of modern computer science
+                research is shifting to problems concerning large data sets. Thus, a theoretical foundation
+                and science base is required for rigorously conducting studies in many related
+                areas. The theory of large data sets is quite different from that of smaller data sets;
+                when dealing with smaller data sets, discrete mathematics is widely used, but for
+                large data sets, asymptotic analysis and probabilistic methods must be applied. Additionally,
+                this change in the theoretical foundation requires a completely different
+                kind of mathematical intuition.
+            </p>
+            <p>
+                We will describe three examples of the science base in this section. Section 3.1
+                briefly introduces some features of large graphs and two types of random graph models.
+                Section 3.2 explores the properties and applications of high-dimensional data.
+                Finally, Section 3.3 discusses some scientific and practical problems involving sparse
+                vectors.
+            </p>
+            <h4>2.1 Large-Scale graphs</h4>
+            <p>
+                Large graphs have become an increasingly important tool for representing realworld
+                data in modern computer science research. Many empirical experiments have
+                been performed on large-scale graphs to reveal interesting findings[3,5,15,21−27]. A
+                computer network may have consisted of only a few hundred nodes in previous years,
+                but now we must be able to deal with large-scale networks containing millions or
+                even billions of nodes. Many important features of such large graphs remain constant
+                when small changes are made to the network. 
+            </p>
+            <div align="center">
+                <img src="f3.png" alt="Topic evolution map of the ACM corpus"> <br>
+                Figure 3. Topic evolution map of the ACM corpus
+            </div>
+            <p>
+                Another interesting feature of real-world networks is the existence of the “giant
+                component”. The following table describes the number of components of each size in
+                a protein database containing 2,730 proteins and 3,602 interactions between proteins.
+            </p>
+            <div align="center">
+                <table class="sci-tbl">
+                    <tr>
+                        <td style="width: 20%">Component Size</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td># Components</td>
+                        <td>34</td>
+                        <td>47</td>
+                        <td>68</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td># Color</td>
+                        <td>769</td>
+                        <td>679</td>
+                        <td>890</td>
+                        <td>57</td>
+                    </tr>
+                    <tr>
+                        <td>#Weight</td>
+                        <td>678</td>
+                        <td>3</td>
+                        <td>79</td>
+                        <td>75</td>
+                    </tr>
+                </table><br>
+                Table 2.1 Component Size Scaling   
+            </div>
+            <p>
+                Since random graph models mimic some vital features of real-world networks,
+                it is often helpful to study the processes that generate these features in random
+                graph models. An understanding of these processes can provide valuable insights for
+                analyzing real-world data sets.
+            </p>
+            <h3>3 Conclusion</h3>
+            <p>
+                Future computer science research is believed to employ, analyze, and interpret
+                large data sets. In this paper, we have discussed several examples of current projects
+                that represent modern research directions in computer science, ranging from identifying
+                communities in large-scale social networks to tracing bird migration routes in
+                North America. As computing pervades every facet of our lives and data collection
+                becomes increasingly ubiquitous, feasible algorithms for solving these problems are
+                becoming more and more necessary to analyze and understand the vast quantities of
+                available information. In order to rigorously develop these algorithms, a mathematical
+                foundation must be established for large data sets, including the theory of large
+                graphs, high-dimensional data, sparse vectors and so on. These innovative studies
+                discover striking results that reveal a fundamental change in computer science that
+                will reshape our knowledge of the world.
+            </p>
+            <h3>References</h3>
+            <table class="ref" style="font-size: 0.8em">
+                <tr>
+                    <td>[1]</td>
+                    <td>Shaparenko B, Caruana R, Gehrke J, Joachims T. Identifying temporal patterns and key players
+                        in document collections. Proc. of IEEE ICDM Workshop on Temporal Data Mining: Algorithms,
+                    Theory and Applications (TDM-05). 2005. 165–174.</td>
+                </tr>
+                <tr>
+                    <td>[2]</td>
+                    <td>Gaertler M. Clustering. Network Analysis: Methodological Foundations, 2005, 3418: 178–215.</td>
+                </tr>
+                <tr>
+                    <td>[3]</td>
+                    <td>Newman MEJ, Girvan M. Finding and evaluating community structure in networks. Phys. Rev.
+                    E, 2004, 69(026113).</td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>
